@@ -3,3 +3,9 @@
   flex-wrap: nowrap;
   flex-direction: row;
 }
+
+.palette-title {
+  background: black;
+  color: white;
+  padding: 10px;
+}

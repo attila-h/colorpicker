@@ -7,7 +7,7 @@ const Palette = (props) => {
   const palette = props.value;
   return (
     <Card>
-      <div>{palette.title}</div>
+      <div className="palette-title">{palette.title}</div>
       <div className="colors-container">
         {palette.colors.map((color) => {
           return <Color key={color} value={color} />;
