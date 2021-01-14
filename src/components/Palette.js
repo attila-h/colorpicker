@@ -1,9 +1,10 @@
 import React from "react";
+import Card from "./Card";
 
 const Palette = (props) => {
   const palette = props.value;
   return (
-    <div>
+    <Card>
       <div>
         {palette.colors.map((color) => {
           return <div key={color}>{color}</div>;
@@ -13,7 +14,7 @@ const Palette = (props) => {
       <div>{palette.userName}</div>
       <div>{palette.dateCreated}</div>
       <div>{palette.numHearts}</div>
-    </div>
+    </Card>
   );
 };
 
