@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import Palette from "./Palette";
+import "./Palettes.css";
 
 const Palettes = () => {
   const PALETTES_PER_PAGE = 10;
@@ -39,7 +40,7 @@ const Palettes = () => {
 
   return (
     <React.Fragment>
-      <div>
+      <div className="palettesContainer">
         {palettes.map((palette) => {
           return <Palette key={palette.id} value={palette} />;
         })}
