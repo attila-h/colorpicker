@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
+import Palette from "./Palette";
 
 const Palettes = () => {
   const PALETTES_PER_PAGE = 10;
@@ -40,7 +41,7 @@ const Palettes = () => {
     <React.Fragment>
       <div>
         {palettes.map((palette) => {
-          return <div key={palette.id}>{palette.title}</div>;
+          return <Palette key={palette.id} value={palette} />;
         })}
       </div>
       <div className="scrollTrigger" ref={scrollTrigger}></div>
