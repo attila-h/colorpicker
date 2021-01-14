@@ -1,16 +1,18 @@
 import React from "react";
 import Card from "./Card";
+import Color from "./Color";
+import "./Palette.css";
 
 const Palette = (props) => {
   const palette = props.value;
   return (
     <Card>
-      <div>
+      <div>{palette.title}</div>
+      <div className="colors-container">
         {palette.colors.map((color) => {
-          return <div key={color}>{color}</div>;
+          return <Color key={color} value={color} />;
         })}
       </div>
-      <div>{palette.title}</div>
       <div>{palette.userName}</div>
       <div>{palette.dateCreated}</div>
       <div>{palette.numHearts}</div>

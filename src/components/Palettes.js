@@ -40,7 +40,7 @@ const Palettes = () => {
 
   return (
     <React.Fragment>
-      <div className="palettesContainer">
+      <div className="palettes-container">
         {palettes.map((palette) => {
           return <Palette key={palette.id} value={palette} />;
         })}
