@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
+import Loader from "./Loader";
 import Palette from "./Palette";
 import "./Palettes.css";
 
@@ -40,6 +41,7 @@ const Palettes = () => {
 
   return (
     <React.Fragment>
+      {isLoading && <Loader />}
       <div className="palettes-container">
         {palettes.map((palette) => {
           return <Palette key={palette.id} value={palette} />;
