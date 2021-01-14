@@ -13,9 +13,11 @@ const Palette = (props) => {
           return <Color key={color} value={color} />;
         })}
       </div>
-      <div>{palette.userName}</div>
-      <div>{palette.dateCreated}</div>
-      <div>{palette.numHearts}</div>
+      <div className="palette-details">
+        <div className="palette-attribute">{palette.userName}</div>
+        <div className="palette-attribute">{palette.dateCreated}</div>
+        <div className="palette-attribute">{palette.numHearts}</div>
+      </div>
     </Card>
   );
 };

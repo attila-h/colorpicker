@@ -1,8 +1,13 @@
 .card {
-  width: 220px;
   border: 1px gray solid;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 gray;
   background-color: white;
   margin: 15px;
+}
+
+@media only screen and (max-width: 620px) {
+  [class*="card"] {
+    width: 100%;
+  }
 }

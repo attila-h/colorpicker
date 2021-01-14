@@ -9,3 +9,21 @@
   color: white;
   padding: 10px;
 }
+
+.palette-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.palette-attribute {
+  padding: 5px;
+  min-width: 180px;
+}
+
+@media only screen and (max-width: 620px) {
+  [class*="palette-details"] {
+    flex-direction: column;
+  }
+}
