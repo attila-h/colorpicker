@@ -17,11 +17,6 @@
   justify-content: center;
 }
 
-.palette-attribute {
-  padding: 5px;
-  min-width: 180px;
-}
-
 @media only screen and (max-width: 620px) {
   [class*="palette-details"] {
     flex-direction: column;

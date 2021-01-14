@@ -1,0 +1,8 @@
+.palette-attribute {
+  min-width: 180px;
+}
+
+.palette-attribute-name {
+  background: darkslategray;
+  color: white;
+}
