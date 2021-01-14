@@ -4,10 +4,11 @@
   box-shadow: 0 4px 8px 0 gray;
   background-color: white;
   margin: 15px;
+  width: 100%;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (min-width: 620px) {
   [class*="card"] {
-    width: 100%;
+    width: initial;
   }
 }
