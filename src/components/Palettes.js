@@ -14,7 +14,7 @@ const Palettes = () => {
   useEffect(() => {
     axios
       .get(
-        `https://my-cors-proxy.herokuapp.com/http://www.colourlovers.com/api/palettes/new?format=json&numResults=${PALETTES_PER_PAGE}&resultOffset=${offset}`
+        `http://www.colourlovers.com/api/palettes/new?format=json&numResults=${PALETTES_PER_PAGE}&resultOffset=${offset}`
       )
       .then((result) => {
         setPalettes((prevPalettes) => [...prevPalettes, ...result.data]);
