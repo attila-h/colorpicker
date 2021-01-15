@@ -10,8 +10,8 @@ const Palette = (props) => {
     <Card>
       <div className="palette-title">{palette.title}</div>
       <div className="colors-container">
-        {palette.colors.map((color) => {
-          return <Color key={color} value={color} />;
+        {palette.colors.map((color, index) => {
+          return <Color key={color + index} value={color} />;
         })}
       </div>
       <div className="palette-details">
